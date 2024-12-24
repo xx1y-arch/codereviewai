@@ -1,0 +1,15 @@
+shell: bash
+
+commands:
+  run:
+    description: "Start the application using Docker Compose."
+    cmd: |
+      docker-compose build && docker-compose up
+
+  test:
+    description: "Run tests with pytest."
+    env:
+      TEST: "True"
+    cmd: |
+      docker-compose build &&
+      docker-compose run --rm app python -m pytest -v
