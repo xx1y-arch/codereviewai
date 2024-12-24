@@ -23,7 +23,6 @@ Ensure the following tools are installed on your system:
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/xx1y-arch/codereviewai
-   cd app
 
 2. **Set Up Environment Variables**: \
   Create a .env file in the root of the project with the following content
